@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".VeiculoDetalheActivity"
+            android:name=".HomeActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

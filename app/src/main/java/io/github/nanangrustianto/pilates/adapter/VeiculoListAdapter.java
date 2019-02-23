@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import io.github.nanangrustianto.pilates.R;
-import io.github.nanangrustianto.pilates.VeiculoDetalheActivity;
+import io.github.nanangrustianto.pilates.HomeActivity;
 import io.github.nanangrustianto.pilates.model.Veiculo;
 
 /**
@@ -69,7 +69,7 @@ public class VeiculoListAdapter extends BaseAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Intent i = new Intent(v.getContext(), VeiculoDetalheActivity.class);
+                Intent i = new Intent(v.getContext(), HomeActivity.class);
                 i.putExtra("id", veiculo.getId());
                 v.getContext().startActivity(i);
 
