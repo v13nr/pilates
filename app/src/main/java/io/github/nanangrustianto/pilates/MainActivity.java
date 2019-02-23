@@ -61,14 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnAddVeiculo).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //v13nr Intent i = new Intent(v.getContext(), AddVeiculo.class);
-                //v.getContext().startActivity(i);
-            }
-        });
-
+ 
 
         progressDialog = new ProgressDialog(MainActivity.this);
         progressDialog.setMessage("Tes ando...");
