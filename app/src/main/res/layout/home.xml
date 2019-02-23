@@ -39,6 +39,15 @@
             android:layout_marginTop="60dp"
             app:srcCompat="@drawable/login" />
 
+        <ImageView
+            android:id="@+id/imageViewdevider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="475dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/textdevider" />
 
         <ImageView
             android:id="@+id/imageViewregister"

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lnbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPutih"
+        android:weightSum="5">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="455dp"
+                android:src="@drawable/orangeheader" />
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxWidth="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:src="@drawable/mainlogo" />
+
+
+            <ImageView
+                android:id="@+id/imageViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/login" />
+
+            <ImageView
+                android:id="@+id/imageViewdevider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/textdevider" />
+
+            <ImageView
+                android:id="@+id/imageViewregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/register" />
+            <ImageView
+                android:id="@+id/imageViewAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/aboutus" />
+
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

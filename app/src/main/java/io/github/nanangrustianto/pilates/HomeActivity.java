@@ -49,6 +49,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageView viewLogin;
     ImageView viewRegister;
     ImageView viewAbout;
+    ImageView devider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,8 +71,20 @@ public class HomeActivity extends AppCompatActivity {
         findViewById(R.id.btnGrupKelas).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                ProgressDialog nDialog;
+                nDialog = new ProgressDialog(HomeActivity.this);
+                nDialog.setMessage("Loading..");
+                nDialog.setTitle("Get Data");
+                nDialog.setIndeterminate(false);
+                nDialog.setCancelable(true);
+                nDialog.show();
+
                 //onBackPressed();
                 Intent intent = new Intent(getApplicationContext(), BookingClass.class);
+
+                nDialog.dismiss();
+                
                 startActivity(intent);
             }
         });
@@ -81,15 +94,18 @@ public class HomeActivity extends AppCompatActivity {
         viewLogin = (ImageView) findViewById(R.id.imageViewLogin);
         viewRegister = (ImageView) findViewById(R.id.imageViewregister);
         viewAbout = (ImageView) findViewById(R.id.imageViewAbout);
+        devider = (ImageView) findViewById(R.id.imageViewdevider);
 
         scaleImage(viewLogo, 550); // in dp
         scaleImage(viewLogin, 100); // in dp
         scaleImage(viewRegister, 140); // in dp
         scaleImage(viewAbout, 160); // in dp
-        setMargins(viewLogo, 50, 50, 50, 50);
-        setMargins(viewLogin, 140, 170, 50, 50);
+        scaleImage(devider, 210); // in dp
+        setMargins(devider, 240, 170, 50, 50);
+        setMargins(viewLogo, 50, 30, 50, 50);
+        setMargins(viewLogin, 120, 170, 50, 50);
         setMargins(viewRegister, 280, 170, 50, 50);
-        setMargins(viewAbout, 460, 170, 50, 50);
+        setMargins(viewAbout, 470, 170, 50, 50);
         viewLogo.getLayoutParams().width=692;
         viewLogo.requestLayout();
 
