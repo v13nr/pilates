@@ -29,6 +29,8 @@
             app:srcCompat="@drawable/mainlogo" />
 
 
+
+
     </FrameLayout>
     <ImageView
         android:id="@+id/imageView3"
@@ -48,150 +50,10 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorPutih"
         android:weightSum="5">
-
-        <RelativeLayout
-            android:id="@+id/btnGrupKelas"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <ImageView
-                android:id="@+id/imgmybooking"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:src="@drawable/iconbookingclass" />
-
-            <TextView
-                android:id="@+id/myImageViewText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imgmybooking"
-                android:layout_alignLeft="@+id/imgmybooking"
-                android:layout_alignRight="@+id/imgmybooking"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="1dp"
-                android:gravity="center"
-                android:text="BOOKING CLASS"
-                android:textSize="9sp"
-                android:textColor="#000000" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/imgmyclass"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <ImageView
-                android:id="@+id/myclass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:src="@drawable/iconmyclass" />
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/imgmyinbox"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <ImageView
-                android:id="@+id/inbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:src="@drawable/iconinbox" />
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/chat"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <ImageView
-                android:id="@+id/mychat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:src="@drawable/iconchat" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/profile"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <ImageView
-                android:id="@+id/myprofile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:src="@drawable/iconprofile" />
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/btneditar"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clickable="false"
-                android:gravity="center"
-                android:text="Editar"
-                android:textColor="#FAFAFA"
-                android:textSize="18sp"
-                android:visibility="gone" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/btnremover"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clickable="false"
-                android:gravity="center"
-                android:text="Remover"
-                android:textColor="#FAFAFA"
-                android:textSize="18sp"
-                android:visibility="gone" />
-        </RelativeLayout>
-
-
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/menubawah" />
     </LinearLayout>
 
 
