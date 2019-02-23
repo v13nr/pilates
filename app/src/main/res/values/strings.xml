@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pilates</string>
+    <string name="webservice">https://sogi-online.com/WebServicePHP/</string>
+</resources>
