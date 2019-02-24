@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), BookingClass.class);
 
                 nDialog.dismiss();
-                
+
                 startActivity(intent);
             }
         });
