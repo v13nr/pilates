@@ -74,15 +74,78 @@
                 android:layout_marginTop="60dp"
                 app:srcCompat="@drawable/aboutus" />
 
-            <Spinner
-                android:id="@+id/spinner"
+            <EditText
+                android:id="@+id/txtNama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="150dp"
-                android:background="@android:drawable/btn_dropdown"
-                android:dropDownWidth="match_parent"
-                android:popupBackground="@color/colorPrimaryDark"
-                android:textColor="#FF0000" />
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nama" />
+            <EditText
+                android:id="@+id/editTextTGLLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Tgl Lahir" />
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="210dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Email" />
+            <EditText
+                android:id="@+id/editTexthp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="240dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="No. HP" />
+            <EditText
+                android:id="@+id/editTextAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="270dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/editTextpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="300dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/editTextPasswordUlang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="330dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ulang Password" />
+
 
         </FrameLayout>
     </LinearLayout>
