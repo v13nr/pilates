@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="io.github.nanangrustianto.pilates.RegisterActivity">
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/tes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="455dp"
+                app:srcCompat="@drawable/orangeheader" />
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:maxWidth="100dp"
+                app:srcCompat="@drawable/mainlogo" />
+
+
+            <ImageView
+                android:id="@+id/imageViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/login" />
+
+            <ImageView
+                android:id="@+id/imageViewdevider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/textdevider" />
+
+            <ImageView
+                android:id="@+id/imageViewregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/register" />
+
+            <ImageView
+                android:id="@+id/imageViewAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="475dp"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/aboutus" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:dropDownWidth="match_parent"
+                android:popupBackground="@color/colorPrimaryDark"
+                android:textColor="#FF0000" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lnbuttons1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPutih"
+        android:layout_below="@+id/ly1"
+        android:weightSum="5">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/menubawah" />
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lnbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPutih"
+        android:weightSum="5">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/menubawah" />
+    </LinearLayout>
+
+
+</RelativeLayout>

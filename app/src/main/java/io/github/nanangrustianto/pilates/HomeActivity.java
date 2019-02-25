@@ -89,6 +89,18 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.imageViewregister).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                //onBackPressed();
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
 
         viewLogo = (ImageView) findViewById(R.id.imageViewLogo);
         viewLogin = (ImageView) findViewById(R.id.imageViewLogin);

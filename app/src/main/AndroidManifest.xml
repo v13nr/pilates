@@ -29,9 +29,11 @@
             android:name=".AddVeiculo"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".BookingClass"
+        <activity
+            android:name=".BookingClass"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
