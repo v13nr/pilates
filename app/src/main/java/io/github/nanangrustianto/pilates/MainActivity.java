@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         veiculosList.clear();
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                AppConfig.SERVER_HOME_URL+"/getAllVeiculos.php", new Response.Listener<String>() {
+                AppConfig.PATH_TO_MENU_DEPAN, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
