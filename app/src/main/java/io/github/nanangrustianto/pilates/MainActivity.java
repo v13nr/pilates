@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                     VeiculoListAdapter veiculoListAdapter = new VeiculoListAdapter(MainActivity.this,veiculosList);
 
                     veiculosListView.setAdapter(veiculoListAdapter);
-                    errormessage.setText("Dafta Tidak dapat di load.");
+                    errormessage.setText("Daftar Tidak dapat di load.");
                     veiculosListView.setEmptyView(errormessage);
 
                     progressDialog.cancel();

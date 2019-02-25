@@ -146,6 +146,16 @@
                 android:inputType="textPersonName"
                 android:text="Ulang Password" />
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btSubmitRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/kuning"
+                android:textColor="@color/colorPutih"
+                android:layout_marginTop="370dp"
+                android:text="Submit" />
+
 
         </FrameLayout>
     </LinearLayout>
