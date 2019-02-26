@@ -101,7 +101,7 @@ public class RegisterActivity extends AppCompatActivity {
         registerbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
+
                 String[] lista = new String[2];
                 lista[0]="Ya";
                 lista[1]="Tidak";
@@ -112,9 +112,9 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int which) {
                         if (which==0){
 
-                      */
-                            new prosesSaveRegister("1","1","1","1","1","1","1","1","1","1","1","1");
-                      /*
+
+                            prosesRegister("1","1","1","1","1","1","1","1","1","1","1","1");
+
                         }else{
 
                         }
@@ -124,7 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
 
-                */
+
             }
         });
 
@@ -263,6 +263,7 @@ public class RegisterActivity extends AppCompatActivity {
         protected JSONObject doInBackground(String... urls) {
 
             try {
+                Log.i("Line", AppConfig.PATH_TO_REGISTER);
                 String url = AppConfig.PATH_TO_REGISTER;
                 HttpClient httpclient = new DefaultHttpClient();
                 HttpPost httppost = new HttpPost(url);
@@ -272,6 +273,7 @@ public class RegisterActivity extends AppCompatActivity {
                 reqEntity.addPart("nama_bank", new StringBody(nama_bank));
                 reqEntity.addPart("norek", new StringBody(norek));
                 reqEntity.addPart("npwp", new StringBody(npwp));
+                //reqEntity.addPart("action", new StringBody("'getReg'"));
 
 
                 httppost.setEntity(reqEntity);
@@ -322,30 +324,10 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
             if(success) {
-                Toast.makeText(context, message, Toast.LENGTH_LONG).show();
-                if(message=="Data GAGAL terkirim."){
-
-                    text_message.setText(message, null);
-                    text_title.setText(success?"BERHASIL":"GAGAL");
-                    dialog_informasi.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                    dialog_informasi.show();
-
-                } else {
-
-
-                    text_message.setText("ingat email Anda : ", null);
-                    text_title.setText(success?"BERHASIL":"GAGAL");
-                    dialog_informasi.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                    dialog_informasi.show();
-
-
-                }
+                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
 
             } else {
-                text_message.setText(message);
-                text_title.setText(success?"BERHASIL":"GAGAL");
-                dialog_informasi.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog_informasi.show();
+                Toast.makeText(getApplicationContext(), "Gagal Registrasi, Silakan mencoba lagi", Toast.LENGTH_LONG).show();
             }
 
         }
